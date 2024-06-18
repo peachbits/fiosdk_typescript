@@ -1,18 +1,19 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": { "*": ["types/*"] },
-      "module": "commonjs",
-      "noImplicitReturns": true,
-      "noUnusedLocals": true,
-      "outDir": "lib",
-      "sourceMap": false,
-      "strict": true,
-      "target": "es2015",
-      "lib": ["ES2021.Promise", "ES2020.Promise", "dom"],
-    },
-    "compileOnSave": true,
-    "include": [
-      "src"
-    ]
-  }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "*": ["types/*"] },
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2015",
+    "lib": ["ES2021.Promise", "ES2020.Promise", "dom"],
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "declarationMap": true
+  },
+  "compileOnSave": true,
+  "include": ["src"]
+}
